@@ -1,0 +1,15 @@
+
+GET http://localhost:8000/api/task/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjM0ODFhODhjOTQ2ZTZjZTljMWY1MWIwIiwiZHVyYXRpb24iOjM2MDAsImlhdCI6MTY2NTczOTg3OCwiZXhwIjoxNjY1NzQzNDc4fQ._UhTBeWXV466hoiMF7CAgP6BjjlXDDimqa2W_byAA0s
+
+###
+
+POST http://localhost:8000/api/task/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjM0ODFhODhjOTQ2ZTZjZTljMWY1MWIwIiwiZHVyYXRpb24iOjM2MDAsImlhdCI6MTY2NTc3MTUxNSwiZXhwIjoxNjY1Nzc1MTE1fQ.SqevLT6MeU4EScZgciv_f98IDd5_guleGzMj5hSqqJ4
+
+{
+  "content": "Hello World",
+  "userId": "63481a88c946e6ce9c1f51b0"
+}

@@ -1,0 +1,43 @@
+POST http://localhost:8000/api/signup
+Content-Type: application/json
+
+{
+  "email": "tes21@example.com",
+  "password": "123456"
+}
+
+###
+
+POST http://localhost:8000/api/signin
+Content-Type: application/json
+
+{
+  "email": "test2@example.com",
+  "password": "123456"
+}
+
+###
+
+POST http://localhost:8000/api/verify-token
+Content-Type: application/json
+
+{
+  "userId": "6316f7bb01acf15872f3311f",
+  "token": "9fb66bf47416fe9b08aa7614578b785f8026dbd899cdad4f60c3dac54cc7c6ac"
+}
+
+###
+GET http://localhost:8000/api/check-token/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjM0ODFhODhjOTQ2ZTZjZTljMWY1MWIwIiwiZHVyYXRpb24iOjM2MDAsImlhdCI6MTY2NTczOTg3OCwiZXhwIjoxNjY1NzQzNDc4fQ._UhTBeWXV466hoiMF7CAgP6BjjlXDDimqa2W_byAA0s
+Content-Type: application/json
+
+### 
+
+POST http://localhost:8000/api/reset-pass
+Content-Type: application/json
+
+{
+  "userId": "6316f7bb01acf15872f3311f",
+  "token": "9fb66bf47416fe9b08aa7614578b785f8026dbd899cdad4f60c3dac54cc7c6ac",
+  "password": "1234567"
+}
+
